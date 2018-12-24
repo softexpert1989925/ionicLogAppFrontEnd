@@ -1,0 +1,35 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="in-wrapper">
+    <input class="in" type="text" placeholder="first name" [(ngModel)]="firstname">
+  </div>
+  <div class="in-wrapper" >
+      <input class="in" type="text" placeholder="last name" [(ngModel)]="lastname">
+  </div> 
+  <div class="in-wrapper">
+      <input class="in" type="email" placeholder="email" [(ngModel)]="email">
+  </div>
+  <div class="in-wrapper">
+     <input class="in" type="password" placeholder="password" [(ngModel)]="password">
+  </div>
+   <div class="in-wrapper">
+      <input class="in" type="tel" placeholder="phone number" [(ngModel)]="telnumber">
+   </div>
+  <div class="btn-wrapper">
+   <button (click)="onClickSignUp()">Sign up</button>
+  </div>
+</ion-content>
